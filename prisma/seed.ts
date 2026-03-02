@@ -11,7 +11,7 @@ async function main() {
       name: 'Forêt Noire',
       subtitle: 'A walk through forgotten woods',
       notes: 'Vetiver · Smoke · Pine',
-      description: 'Forêt Noire opens with a breath of cold air through pine needles, drifting into a heart of wet earth and smoke. The dry-down settles into vetiver and dark wood — a fragrance that lingers like the memory of a place you've never been.',
+      description: "Forêt Noire opens with a breath of cold air through pine needles, drifting into a heart of wet earth and smoke. The dry-down settles into vetiver and dark wood — a fragrance that lingers like the memory of a place you've never been.",
       story: 'Inspired by the Black Forest in winter. The perfumer spent three days walking through its depths in January, collecting impressions that became this scent.',
       price: 22000,
       bottleColor: '#3D4A3E',

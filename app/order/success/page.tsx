@@ -1,11 +1,10 @@
 'use client'
-// app/order/success/page.tsx
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { useCartStore } from '@/lib/store'
 
-export default function OrderSuccessPage() {
+function OrderSuccessContent() {
   const searchParams = useSearchParams()
   const sessionId = searchParams.get('session_id')
   const { clearCart } = useCartStore()
@@ -38,5 +37,13 @@ export default function OrderSuccessPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function OrderSuccessPage() {
+  return (
+    <Suspense fallback={<div></div>}>
+      <OrderSuccessContent />
+    </Suspense>
   )
 }
